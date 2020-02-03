@@ -8,8 +8,31 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>JavaScript Basics</h1>
+    <h3>JavaScript Basics</h3>
     <div id="age"></div>
+    <div id="groceries"></div>
+
+    <script>
+        let friends = `[
+                    {
+                        "name": "Senait",
+                        "age": 28,
+                        "height": 155
+                    },
+                    {
+                        "name": "Michi",
+                        "age": 32,
+                        "height": 171
+                    },
+                    {
+                        "name": "Tina",
+                        "age": 28,
+                        "height": 155
+                    }
+                ]`
+            console.log(JSON.parse(friends));
+            console.log(JSON.parse(friends)[0].age);
+    </script>
 
    <script src="basics.js"></script> 
 </body>
